@@ -1,0 +1,47 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+.menu-content {
+  display: none;
+  flex-direction: column;
+
+  @media screen and (min-width: 600px) {
+    display: unset;
+  }
+}
+
+.menu-content.visible {
+  display: flex;
+}
+
+.site-nav {
+  @media screen and (max-width: 600px) {
+    line-height: 0px !important;
+  }
+
+  .nav-trigger {
+    padding: 0;
+    display: unset !important;
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: 600px) {
+      display: none !important;
+    }
+  }
+
+  .nav-trigger:focus {
+    outline: 2px solid black;
+  }
+}
+
+.page-link {
+  @media screen and (max-width: 600px) {
+    display: unset;
+    padding: 5px 10px;
+    margin-left: 20px;
+  }
+}
+
+@import "minima";
