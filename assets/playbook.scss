@@ -5,6 +5,7 @@
 @import "minima", "minima/base", "minima/layout", "minima/syntax-highlighting";
 
 $brand-color: #d70466;
+$on-tablet: 990px !default;
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
@@ -131,7 +132,7 @@ div {
     font-size: 18px;
 
     @include media-query($on-palm) {
-      padding: 2rem;
+      // padding: 2rem;
     }
   }
 
@@ -140,6 +141,7 @@ div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #1a1821;
     background-image: linear-gradient(316deg, #000, #1a1821);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -155,6 +157,7 @@ div {
     color: $brand-color;
     font-size: 2rem;
     font-weight: 600;
+    text-align: center;
 
     @include media-query($on-laptop) {
       font-size: 2rem;
@@ -278,7 +281,7 @@ a {
   border-radius: 1rem;
   padding: 2.5rem;
 
-  @include media-query($on-palm) {
+  @include media-query($on-tablet) {
     width: 100%;
     padding: 1.5rem;
   }

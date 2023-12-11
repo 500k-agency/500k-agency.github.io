@@ -170,7 +170,7 @@ tags:
           Get the playbook
         </button>
 
-        <div style="display: block; padding: 2rem 0; white-space: nowrap">
+        <div style="display: block; padding: 2rem 0; text-align: center">
           Join over&nbsp;
           <span class="hlite">400+</span>
           &nbsp;readers and community members.
@@ -185,9 +185,28 @@ tags:
     <h2>Testimonials</h2>
     <div class="testwrap">
       <div class="testm">
+        <div style="width: 100%; display: flex; justify-content: center">
+          <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">
+              Have been helping freelancers grow their business for the past
+              year. Love and recommend the Playbook for its simplicity, and
+              clarity and for its focus on communication (sales, negotiation,
+              showing up).
+              <br /><br />Thanks, Paul!
+            </p>
+            &mdash; Dmitry Trofimets (@dowhatmatter)
+            <a
+              href="https://twitter.com/dowhatmatter/status/1731813147625787561?ref_src=twsrc%5Etfw"
+              >December 4, 2023</a
+            >
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="testm">
         <span
           ><strong
-            >Content so good, Redditor mods are actively censoring it.</strong
+            >Content so good, Reddit mods are actively censoring it.</strong
           ></span
         >
 
@@ -209,27 +228,6 @@ tags:
           async=""
           src="https://embed.reddit.com/widgets.js"
           charset="UTF-8"
-        ></script>
-      </div>
-
-      <div class="testm">
-        <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">
-            Have been helping freelancers grow their business for the past year.
-            Love and recommend the Playbook for its simplicity, and clarity and
-            for its focus on communication (sales, negotiation, showing up).
-            <br /><br />Thanks, Paul!
-          </p>
-          &mdash; Dmitry Trofimets (@dowhatmatter)
-          <a
-            href="https://twitter.com/dowhatmatter/status/1731813147625787561?ref_src=twsrc%5Etfw"
-            >December 4, 2023</a
-          >
-        </blockquote>
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
         ></script>
       </div>
 
@@ -317,19 +315,32 @@ tags:
   </div>
 </div>
 
+<script
+  async
+  src="https://platform.twitter.com/widgets.js"
+  charset="utf-8"
+></script>
+
 <script>
   document
     .getElementById("btn-read-primary")
     .addEventListener("click", function () {
-      console.log(typeof gtag);
+      document.getElementById("btn-read-secondary").scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+    });
+
+  document
+    .getElementById("btn-read-secondary")
+    .addEventListener("click", function () {
       if (typeof gtag !== "undefined") {
         gtag("event", "click", {
-          event_category: "Primary",
-          event_label: "Start reading now",
+          event_category: "Secondary",
+          event_label: "Get to playbook",
         });
       }
-      window.open(
-        "https://www.notion.so/spacestationlabs/Explosive-Solo-Dev-Agency-Playbook-Your-first-few-deals-259b6b5ce2134a3683f5ea7b11530db4?pvs=4"
-      );
+      window.open("https://buy.stripe.com/9AQ15m5lOboxcKY003");
     });
 </script>
