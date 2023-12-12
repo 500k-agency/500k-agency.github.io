@@ -316,6 +316,12 @@ tags:
   document
     .getElementById("btn-read-primary")
     .addEventListener("click", function () {
+      if (typeof gtag !== "undefined") {
+        gtag("event", "click", {
+          event_category: "Primary",
+          event_label: "Get to playbook",
+        });
+      }
       document.getElementById("btn-read-secondary").scrollIntoView({
         behavior: "smooth",
         block: "center",
