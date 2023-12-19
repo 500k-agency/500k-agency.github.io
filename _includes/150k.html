@@ -21,5 +21,17 @@
     revenue.
   </p>
 
-  <button class="btn-primary">Learn more</button>
+  <button id="btn-primary" class="btn-primary">Learn more</button>
 </section>
+
+<script>
+  document.getElementById("btn-primary").addEventListener("click", function () {
+    if (typeof gtag !== "undefined") {
+      gtag("event", "click", {
+        event_category: "150k",
+        event_label: "{{ page.title }}",
+      });
+    }
+    window.open("https://500k.agency");
+  });
+</script>
