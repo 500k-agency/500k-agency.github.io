@@ -271,7 +271,6 @@ DEPENDENCIES
   jekyll-compose
   jekyll-feed (~> 0.12)
   jekyll-seo-tag
-  jekyll-sitemap
   jemoji
   minima (~> 2.5.1)
   tzinfo (~> 1.2)
