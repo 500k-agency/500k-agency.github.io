@@ -1,0 +1,111 @@
+---
+---
+
+// Import partials.
+@import "minima", "minima/base", "minima/layout", "minima/syntax-highlighting";
+
+$brand-color: #d70466;
+$on-tablet: 990px !default;
+
+article {
+  padding: 3rem 0;
+}
+
+.site-header {
+  .wrapper {
+    display: flex;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 800px;
+  }
+}
+
+.post-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}
+
+.post-banner {
+  margin: 1rem 0;
+}
+
+.btn-primary {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 24px 28px 20px;
+  border: none;
+  background-color: $brand-color;
+  color: #fff;
+
+  &:focus,
+  &:hover {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+  }
+
+  @include media-query($on-palm) {
+    padding: 18px 20px;
+
+    -webkit-transform: shake;
+    transform: shake;
+    animation-name: shake;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+    animation-fill-mode: forwards;
+  }
+
+  @-webkit-keyframes shake {
+    10%,
+    90% {
+      -webkit-transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      -webkit-transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      -webkit-transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+}

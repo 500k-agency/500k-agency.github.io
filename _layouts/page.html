@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {%- seo -%}
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/page.css" | relative_url }}"> {%-
+    if jekyll.environment == 'production' and site.google_analytics -%} {%-
+    include google-analytics.html -%} {%- endif -%}
+  </head>
+  <body>
+    {%- include header.html -%}
+
+    <article class="post">
+      <header class="post-header">
+        <div class="post-banner">
+          <img alt="{{ page.banner.alt }}" src="{{ page.banner.src }}" />
+        </div>
+        <h1 class="post-title">{{ page.title | escape }}</h1>
+      </header>
+
+      <div class="post-content">{{ content }}</div>
+
+      {%- include {{page.tag}}.html -%}
+    </article>
+  </body>
+</html>
