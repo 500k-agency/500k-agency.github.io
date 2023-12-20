@@ -1,12 +1,13 @@
 ---
 layout: page
 title: Jobs That Pay 500k a year
+description: Turn full-time job postings into part-time contracts
 tag: 500k
 date: 2023-12-19 23:33 -0500
 ---
 
 Software and tech has been one of the best industries to get into for a high
-salary. Making $500k/year as a total compensation (base salary + equity) is
+salary. Making 500k/year as a total compensation (base salary + equity) is
 fairly common.
 
 I started my 1-person web development agency back in 2017 as a way to make money
@@ -16,7 +17,7 @@ Two years later, I was making twice as much as when I was a full-time software
 developer, and more than I ever did from my startups.
 
 Four years later, I helped dozens of rising technology companies grow and build
-products, making $500k/year all while working no more than 40h/week on average.
+products, making 500k/year all while working no more than 40h/week on average.
 
 But my story of landing one of my biggest client came rather unexpectedly - in
 fact after they ghosted me.
@@ -65,7 +66,7 @@ people when I joined to over 50 people currently.
 
 Definitely one of my biggest successes so far.
 
-So, to summarize if you want to make $500k/year as 1-person software development
+So, to summarize if you want to make 500k/year as 1-person software development
 agency:
 
 - Use rejections as learning opportunities
