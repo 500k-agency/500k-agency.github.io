@@ -15,9 +15,11 @@
 
     <article class="post">
       <header class="post-header">
+        {%- if page.banner -%}
         <div class="post-banner">
           <img alt="{{ page.banner.alt }}" src="{{ page.banner.src }}" />
         </div>
+        {%- endif %}
         <h1 class="post-title">{{ page.title | escape }}</h1>
       </header>
 
