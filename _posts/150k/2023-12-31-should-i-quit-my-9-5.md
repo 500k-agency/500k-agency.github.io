@@ -1,6 +1,6 @@
 ---
 layout: page
-title: should i quit my 9-5
+title: Should I quit my 9-5
 description: Should I quit my 9-5 to work on my agency?
 banner:
     src: /assets/150ky.png

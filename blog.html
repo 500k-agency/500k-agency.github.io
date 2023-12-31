@@ -1,0 +1,22 @@
+---
+image: https://500k.agency/assets/cover.jpg
+title: The practical guide to building 500k/year agency
+description: Hey! I'm Paul. I write about my journey scaling a 1-person dev agency to $500k/y.
+permalink: /blog
+tags:
+  - playbook
+---
+<div class="wrapper">
+  <div class="footer-col-wrapper">
+    <h3>Blog Posts</h3>
+    <div class="footer-col">
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

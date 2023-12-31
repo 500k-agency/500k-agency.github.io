@@ -11,6 +11,7 @@ $on-tablet: 990px !default;
 @media (prefers-color-scheme: light) {
   h1,
   h2,
+  h3,
   p {
     color: black;
   }
@@ -48,6 +49,7 @@ $on-tablet: 990px !default;
 @media (prefers-color-scheme: dark) {
   h1,
   h2,
+  h3,
   p {
     color: #fff;
   }
@@ -113,6 +115,17 @@ div {
 
 .site-header {
   display: none;
+}
+
+.site-footer {
+  .wrapper {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-list {
+  }
 }
 
 .site-title {
@@ -425,7 +438,9 @@ a {
   border: none;
   color: #fff;
   background-color: #4f545c;
-  transition: background-color 0.17s ease, color 0.17s ease;
+  transition:
+    background-color 0.17s ease,
+    color 0.17s ease;
   margin: 0 8px;
 }
 
