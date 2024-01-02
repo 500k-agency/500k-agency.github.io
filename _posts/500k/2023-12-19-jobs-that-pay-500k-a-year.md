@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jobs That Pay 500k a year
+title: Jobs that pay 500k a year
 description: Turn full-time job postings into part-time contracts
 tag: 500k
 date: 2023-12-19 23:33 -0500
