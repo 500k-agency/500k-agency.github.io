@@ -1,6 +1,10 @@
 ---
-layout: post
+layout: page
 title: How to land your first software contract in the US
+banner:
+    src: /assets/150ky.png
+    alt: 150k developer contract
+tag: 150k
 date: 2024-01-01 20:19 -0500
 ---
 
