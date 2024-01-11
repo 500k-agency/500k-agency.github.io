@@ -1,0 +1,147 @@
+---
+title: MBA Interest
+permalink: /mba-interest
+tags:
+  - mba
+---
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- seo -%}
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/mba.css" | relative_url }}">
+    {%- if jekyll.environment == 'production' and site.google_analytics -%}
+      {%- include google-analytics.html -%}
+    {%- endif -%}
+  </head>
+  <body>
+    <div class="hero">
+      <div class="container">
+        Paul Xue
+        <span style="color: #d70466">| [An open letter to devs seeking freedom]</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <h1>We demand financial freedom.</h1>
+
+        <div style="margin: 1.5rem 0;">
+          The education you paid for and the skills you've developed are not being utilized to their full potential,
+          often wasted by incompetent managers and directionless companies.
+        </div>
+
+        <div style="margin: 1.5rem 0;">Things are changing fast.</div>
+
+        <div style="margin: 1.5rem 0;">
+          We can no longer rely on "jobs" to secure our future. As the world evolves, the economy adapts to its new
+          shape, and we must reshape ourselves accordingly.
+        </div>
+
+        <div style="margin: 1.5rem 0;">But knowledge is hidden away.</div>
+
+        <div style="margin: 1.5rem 0;">
+          You've searched the internet for solutions. Listened to gurus and attended masterclasses, yet found none
+          satisfying. Untold knowledge scattered and left undiscovered — until now...
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="plan">
+        <div class="plan-inner">
+          <div style="display: flex; flex: 1; align-items: center;">
+            <img src="./assets/mba.png" alt="mba example book" width="500">
+          </div>
+          <div style="display: flex; flex: 2; flex-direction: column;">
+            <p style="font-size: 1.25rem;">Introducing...</p>
+            <p style="font-size: 2rem;">
+              The 500k Agency <span style="color: #d70466">MBA</span>, the ultimate course for developers to build a
+              freeing, profitable agency business.
+            </p>
+
+            <div class="plan-input">
+              <input
+                type="text"
+                id="email_address"
+                name="email_address"
+                class="email-input"
+                placeholder="Email address"
+              >
+              <button id="btn-primary" class="btn-primary">Join the Waitlist</button>
+            </div>
+
+            <div style="font-size: 1rem;">
+              As a software developer looking to quit his 9 to 5 and build an agency... Would recommend Paul not just
+              aspiring entrepreneurs, but also to everyone who has a monetizable skill! - Venkatesh
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="container">
+        <div style="margin: 1.5rem 0;"></div>
+
+        <div style="margin: 1.5rem 0;">I've had to figure it out the hard way, so you don't have to.</div>
+
+        <div style="margin: 1.5rem 0;">
+          On March 29th, 2024, I'm compiling a decade of experience as a Solo software agency owner into The 500k Agency
+          MBA.
+        </div>
+
+        <div style="margin: 1.5rem 0;">Let us usher in a new era of personal growth, with focus and clarity.</div>
+
+        <div style="margin: 1.5rem 0;">Everyone is invited.</div>
+
+        <div style="margin: 1.5rem 0;">
+          <a id="btn-secondary" style="cursor: pointer;">
+            Join the waitlist to find out more about what's in the course and be the first to know when it's ready.</a
+          >
+        </div>
+
+        <div style="margin: 1.5rem 0;">See you there.</div>
+
+        <div style="margin: 1.5rem 0; display: flex; flex-direction: column;">
+          <img src="./assets/signature.png" alt="paul signature" width="150">
+          <span style="font-size: 1.25rem; color: #757677;">- Paul Xue</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById('btn-primary').addEventListener('click', function () {
+        const value = document.getElementById('email_address').value;
+        if (!value) {
+          return;
+        }
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'click', {
+            event_category: 'MBA',
+            event_label: 'Join the waitlist',
+            value: value,
+          });
+        }
+        window.open(`/mba-interest-waitlist?email_address=${value}`);
+      });
+
+      document.getElementById('btn-secondary').addEventListener('click', function () {
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'click', {
+            event_category: 'MBA',
+            event_label: 'Join the waitlist ahref',
+          });
+        }
+        document.getElementById('email_address').scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+          inline: 'nearest',
+        });
+        document.getElementById('email_address').focus();
+      });
+    </script>
+  </body>
+</html>
