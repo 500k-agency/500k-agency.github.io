@@ -145,6 +145,16 @@ div {
   }
 }
 
+.avatar-container {
+  background-color: rgba(128, 128, 128, 0.14);
+
+  img.floating-avatar {
+    object-fit: cover;
+    border-radius: 9999px;
+    border: 2px solid #fff;
+  }
+}
+
 .section {
   padding-bottom: 150px;
   padding-left: 5%;
