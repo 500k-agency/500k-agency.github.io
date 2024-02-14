@@ -333,11 +333,19 @@ a {
   @include media-query($on-tablet) {
     width: 100%;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .screenshot {
+      min-height: 400px !important;
+    }
   }
 }
 
 .nopadding {
   border: unset !important;
+  padding: 0;
 }
 
 .author {
@@ -354,6 +362,10 @@ a {
 .help {
   text-align: center;
   margin-top: 2rem;
+}
+
+#secondary-review {
+  padding: 26px 0;
 }
 
 .btn-read-now {
