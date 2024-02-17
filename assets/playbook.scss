@@ -29,6 +29,10 @@ $on-tablet: 990px !default;
     background-image: linear-gradient(to top, #fff, #ebe9ef);
   }
 
+  .reviews {
+    color: #000;
+  }
+
   .plan-inner {
     background-color: #e1e1e1;
     background-image: linear-gradient(316deg, #fff, #e1e1e1);
@@ -45,7 +49,7 @@ $on-tablet: 990px !default;
   }
 }
 
-/* Black mode */
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   h1,
   h2,
@@ -69,6 +73,10 @@ $on-tablet: 990px !default;
 
   .senja-embed .text-sm {
     color: #fff !important;
+  }
+
+  .reviews {
+    color: #fff;
   }
 
   .plan-inner {
@@ -146,8 +154,6 @@ div {
 }
 
 .avatar-container {
-  background-color: rgba(128, 128, 128, 0.14);
-
   img.floating-avatar {
     object-fit: cover;
     border-radius: 9999px;
@@ -329,6 +335,9 @@ a {
   width: 48%;
   border-radius: 1rem;
   padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @include media-query($on-tablet) {
     width: 100%;
@@ -364,7 +373,12 @@ a {
   margin-top: 2rem;
 }
 
-#secondary-review {
+.reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 18px;
+  cursor: pointer;
   padding: 26px 0;
 }
 
