@@ -1,3 +1,5 @@
+.env
+.envrc
 _site
 .sass-cache
 .jekyll-cache

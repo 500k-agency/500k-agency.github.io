@@ -18,6 +18,10 @@ print-%: ; @echo $*=$($*)
 DATE?=`date +'%Y-%m-%d'`
 POSTDIR="_posts"
 
+.PHONY: tools
+tools:
+	@brew install gh
+
 bundle-path:
 	@bundle info --path minima
 
@@ -33,3 +37,10 @@ build:
 post:
 	@read -r -p "Enter new post title: " title;     \
 	bundle exec jekyll post $${title};
+
+.PHONY: runs
+runs:
+	@gh api \
+		-H "Accept: application/vnd.github+json" \
+		-H "X-GitHub-Api-Version: 2022-11-28" \
+		/repos/${REPO_OWNER}/${REPO_NAME}/actions/runs
