@@ -209,6 +209,17 @@ div {
     }
   }
 
+  .plan-features {
+    margin: 2rem 0;
+    text-align: center;
+    line-height: 2.125rem;
+
+    @include media-query($on-palm) {
+      font-size: 0.75rem;
+      line-height: 1.5rem;
+    }
+  }
+
   .plan-pricing {
     color: $brand-color;
     font-size: 2rem;

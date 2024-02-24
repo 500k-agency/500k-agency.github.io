@@ -37,6 +37,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Makefile
+  - scripts
   - node_modules
   - vendor/bundle/
   - vendor/cache/

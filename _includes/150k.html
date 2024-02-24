@@ -1,8 +1,5 @@
 <section class="150k-section">
-  <p>
-    Landing your first few deals can seem like an impossible task, some of the
-    problems that you may face are:
-  </p>
+  <p>Landing your first few deals can seem like an impossible task, some of the problems that you may face are:</p>
 
   <ol>
     <li>Clients/job listings only hiring full-time salaried positions</li>
@@ -11,27 +8,24 @@
   </ol>
 
   <p>
-    I spent hundreds of hours over 3 months, 120 interviews, and a decade and
-    half of my agency and software development experience to create the
+    I spent hundreds of hours over 3 months, 120 interviews, and a decade and half of my agency and software development
+    experience to create the
     <strong>Practical guide to building a $500K/Year Solo Dev Agency</strong>
     playbook.
   </p>
-  <p>
-    Join 400 readers and community members who've added $150k/year to their
-    revenue.
-  </p>
+  <p>Join 400 readers and community members who've added $150k/year to their revenue.</p>
 
   <button id="btn-primary" class="btn-primary">Learn more</button>
 </section>
 
 <script>
-  document.getElementById("btn-primary").addEventListener("click", function () {
-    if (typeof gtag !== "undefined") {
-      gtag("event", "click", {
-        event_category: "150k",
-        event_label: "{{ page.title }}",
+  document.getElementById('btn-primary').addEventListener('click', function () {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'click', {
+        event_category: '150k',
+        event_label: '{{ page.title }}',
       });
     }
-    window.open("https://500k.agency");
+    window.location.href = 'https://500k.agency';
   });
 </script>

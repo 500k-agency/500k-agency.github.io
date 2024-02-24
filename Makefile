@@ -37,10 +37,3 @@ build:
 post:
 	@read -r -p "Enter new post title: " title;     \
 	bundle exec jekyll post $${title};
-
-.PHONY: runs
-runs:
-	@gh api \
-		-H "Accept: application/vnd.github+json" \
-		-H "X-GitHub-Api-Version: 2022-11-28" \
-		/repos/${REPO_OWNER}/${REPO_NAME}/actions/runs

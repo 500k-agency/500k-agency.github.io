@@ -6,12 +6,11 @@
       <h3>Latest Blog Posts</h3>
       <div class="footer-col">
         <ul>
-          {% for post in site.posts limit: 5 %}
+          {% for post in site.posts | sort "date" limit: 5 %}
             <li>
               <a href="{{ post.url }}">{{ post.title }}</a>
             </li>
           {% endfor %}
-
           <li>
             <a href="/blog">View more&nbsp;→</a>
           </li>
