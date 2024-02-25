@@ -26,7 +26,7 @@ bundle-path:
 	@bundle info --path minima
 
 run:
-	@bundle exec jekyll serve --incremental --livereload
+	@bundle exec jekyll serve --incremental --livereload --host 0.0.0.0
 
 clean:
 	@bundle exec jekyll clean
