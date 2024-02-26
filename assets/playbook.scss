@@ -5,6 +5,7 @@
 @import "minima", "minima/base", "minima/layout", "minima/syntax-highlighting";
 
 $brand-color: #d70466;
+$brand-fg-color: #fff;
 $on-tablet: 990px !default;
 
 /* Light mode */
@@ -33,10 +34,14 @@ $on-tablet: 990px !default;
     color: #000;
   }
 
+  .plan {
+    // background-color: #e1e1e1;
+    // background-image: linear-gradient(316deg, #fff, #e1e1e1);
+    // border: 1px solid #e5e7eb;
+  }
+
   .plan-inner {
-    background-color: #e1e1e1;
-    background-image: linear-gradient(316deg, #fff, #e1e1e1);
-    border: 1px solid rgba(000, 000, 000, 0.18);
+    border: 1px solid #e5e7eb;
   }
 
   .testm {
@@ -184,6 +189,8 @@ div {
   }
 
   .plan {
+    display: flex;
+    flex-direction: column;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -195,39 +202,97 @@ div {
     }
   }
 
-  .plan-inner {
+  div.plan-inner {
+    display: flex;
+    border-radius: 2rem;
+    overflow: hidden;
+
+    @include media-query($on-palm) {
+      flex-direction: column;
+    }
+  }
+
+  div.plan-pricing {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 20px;
     align-items: center;
-    border-radius: 12px;
-    border-radius: 1rem;
-    padding: 3rem 5rem;
+    background-color: $brand-color;
+    color: $brand-fg-color;
+    padding: 3rem 2rem;
+    width: 240px;
 
     @include media-query($on-palm) {
-      padding: 2rem;
+      padding: 32px 20px 20px 20px;
+      width: 100%;
+      align-items: flex-start;
     }
   }
 
-  .plan-features {
-    margin: 2rem 0;
-    text-align: center;
-    line-height: 2.125rem;
-
-    @include media-query($on-palm) {
-      font-size: 0.75rem;
-      line-height: 1.5rem;
-    }
-  }
-
-  .plan-pricing {
-    color: $brand-color;
-    font-size: 2rem;
+  span.plan-pricing {
+    font-size: 3rem;
     font-weight: 600;
     text-align: center;
 
     @include media-query($on-laptop) {
       font-size: 2rem;
+    }
+  }
+
+  .plan-name {
+    span {
+    }
+  }
+
+  .plan-features {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+
+    @include media-query($on-palm) {
+      padding: 20px;
+      h2 {
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .plan-feature-items {
+    margin: 1.125rem 0;
+    text-align: center;
+    line-height: 1.75rem;
+
+    @include media-query($on-palm) {
+      font-size: 0.9rem;
+      line-height: 1.5rem;
+    }
+
+    div.item-title {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      @include media-query($on-palm) {
+        font-size: 1.125rem;
+        div {
+          text-align: start;
+        }
+      }
+    }
+
+    div.item-subtitle {
+      p {
+        text-align: start;
+        color: #9aa4b1;
+        font-size: 0.9rem;
+        margin-bottom: 12px;
+      }
+    }
+
+    svg {
+      fill: $brand-color;
     }
   }
 
@@ -397,14 +462,14 @@ a {
   display: inline-block;
   outline: none;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 20px;
   font-weight: 600;
   border-radius: 8px;
-  padding: 28px 32px 24px;
+  padding: 14px 16px;
   border: none;
-  background-color: $brand-color;
-  color: #fff;
+  color: $brand-color;
+  background-color: $brand-fg-color;
 
   &:focus,
   &:hover {
@@ -415,6 +480,7 @@ a {
 
   @include media-query($on-palm) {
     padding: 18px 20px;
+    width: 100%;
 
     -webkit-transform: shake;
     transform: shake;
@@ -496,6 +562,15 @@ a {
       transform: translate3d(0, 0, 0);
     }
   }
+}
+
+.btn-primary {
+  color: $brand-fg-color;
+  background-color: $brand-color;
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 600;
+  padding: 28px 32px 24px;
 }
 
 #btn-dm {
