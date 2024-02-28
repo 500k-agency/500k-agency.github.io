@@ -34,14 +34,10 @@ $on-tablet: 990px !default;
     color: #000;
   }
 
-  .plan {
-    // background-color: #e1e1e1;
-    // background-image: linear-gradient(316deg, #fff, #e1e1e1);
-    // border: 1px solid #e5e7eb;
-  }
-
   .plan-inner {
     border: 1px solid #e5e7eb;
+    background-color: #e1e1e1;
+    background-image: linear-gradient(to top, #fff, #ebe9ef);
   }
 
   .testm {
