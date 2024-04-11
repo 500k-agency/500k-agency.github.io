@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 8 steps to start a successful solo agency
 description: Step by step to starting a successful solo agency
 tag: 500k
