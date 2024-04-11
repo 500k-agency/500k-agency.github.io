@@ -13,15 +13,14 @@ find success.
 
 I started working for myself because I knew I could do it better. Of course,
 I also had the biggest ego of anyone I know. But the truth is, if you don’t
-think you can do it better (or don’t care), then by all means keep working for
-someone else.
+think you can do it better (or don’t care), then you probably won't have the
+urge to work for yourself in the first place.
 
 **2. Listen to people who’s hiring.**
 
-Most people don’t want to tell you their problems
-in the open. But if the problem gets big enough, they tend to look for people to
-solve it for them. If you don’t know what problems to solve, this is a great way
-to find one.
+Most people don’t want to broadcast their problems in the open. But if the
+problem gets big enough, they tend to look for people to solve it for them. If
+you don’t know what problems to solve, this is a great way to find one.
 
 **3. Offer your help.**
 
@@ -54,14 +53,14 @@ how you might be able to help.
 **7. Be a voice in your community.**
 
 If you’ve found a big problem that needs to be solved by lots of people (the
-best ones will be a simple solution to a big to a big problem), teach it to
-other people. Your goal isn’t to horde a problem and solve it all by yourself,
-your goal is do solve it better, together with smart people.
+best are simple solutions to a big problem), teach it to other people. Your goal
+isn’t to horde a problem and solve it all by yourself, your goal is do solve it
+better, and together with smart people.
 
-**8. Find focus.**
+**8. Find focus and raise your price.**
 
 If everything goes well, you’ll be seen as a capable expert in your field. When
-you have a hard time turning away clients, raise your price and pick only the
+you get busy and need to turn away clients, raise your price and pick only the
 best clients for you to work with. You’ll be happier and get more free time
 back, and do great work at the same time. This is what we set out to find in the
 first place.
