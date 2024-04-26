@@ -1,5 +1,6 @@
 .env
 .envrc
+.bundle
 _site
 _work
 .sass-cache
@@ -7,6 +8,8 @@ _work
 .jekyll-metadata
 vendor
 node_modules
+*.log
 
 Gemfile.lock
 yarn.lock
+pnpm-lock.yaml

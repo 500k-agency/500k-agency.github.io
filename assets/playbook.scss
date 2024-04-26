@@ -40,6 +40,10 @@ $on-tablet: 990px !default;
     background-image: linear-gradient(to top, #fff, #ebe9ef);
   }
 
+  .plan-inner-drip {
+    color: #000;
+  }
+
   .testm {
     border: 1px solid rgba(0, 0, 0, 0.18);
   }
@@ -84,6 +88,10 @@ $on-tablet: 990px !default;
     background-color: #1a1821;
     background-image: linear-gradient(316deg, #000, #1a1821);
     border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .plan-inner-drip {
+    color: #fff !important;
   }
 
   .testm {
@@ -190,7 +198,7 @@ div {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 5rem;
+    padding-top: 1.5rem;
     font-size: 18px;
 
     @include media-query($on-palm) {
@@ -296,6 +304,82 @@ div {
     border-top: 1px solid rgba(255, 255, 255, 0.21);
     width: 100%;
   }
+
+  .plan-drip {
+    font-family: "Georgia", sans-serif;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    font-size: 18px;
+
+    @include media-query($on-palm) {
+      // padding: 2rem;
+    }
+  }
+
+  .plan-inner-drip {
+    display: flex;
+    border-radius: 12px;
+    border-radius: 1rem;
+    padding: 5rem 5.5rem;
+    border: 1px solid rgba(000, 000, 000, 0.18);
+
+    @include media-query($on-palm) {
+      flex-direction: column;
+      align-items: center;
+      padding: 1.25rem;
+    }
+  }
+
+  .plan-drip-subtitle {
+    font-size: 1.125rem;
+
+    @include media-query($on-palm) {
+      font-size: 1rem;
+    }
+  }
+
+  .plan-inner-drip-content {
+    display: flex;
+  }
+
+  .plan-drip-input {
+    margin: 1.5rem 0 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @include media-query($on-palm) {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  input.email-input {
+    color: #000;
+    border-color: #e3e3e3;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 0.95rem !important;
+    font-size: 15px;
+    padding-left: 1.5rem !important;
+    width: 18rem !important;
+    background: #ffffff;
+    padding: 12px;
+    border: 1px solid #e3e3e3;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
+    line-height: 1.4;
+    margin: 0 1rem 0 0;
+    -webkit-transition: border-color ease-out 300ms;
+    transition: border-color ease-out 300ms;
+
+    @include media-query($on-palm) {
+      margin: 0 0 1rem 0;
+    }
+  }
 }
 
 .container {
@@ -361,15 +445,26 @@ div {
 .container-lesson {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
 
   @include media-query($on-palm) {
     flex-direction: column;
   }
 
-  ul,
-  ol {
-    margin-left: 0;
+  & > div {
+    border-radius: 18px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  video {
+    width: 100%;
+    height: 100%;
+    overflow-clip-margin: content-box;
+    overflow-x: clip;
+    overflow-y: clip;
+    border-radius: inherit;
+    object-fit: cover;
   }
 }
 
@@ -567,6 +662,20 @@ a {
   line-height: 20px;
   font-weight: 600;
   padding: 28px 32px 24px;
+}
+
+.btn-subscribe {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: normal;
+  outline: none;
+  cursor: pointer;
+  line-height: 20px;
+  border-radius: 100px;
+  padding: 14px 24px;
+  border: none;
+  background-color: $brand-color;
+  color: #fff;
 }
 
 #btn-dm {

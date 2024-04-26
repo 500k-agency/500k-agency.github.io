@@ -279,23 +279,17 @@ tags:
   <div class="container">
     <h2>Steps to 500K (10 Chapters)</h2>
     <div class="container-lesson">
-      <ul>
-        <li class="chapter-item">🚀 Your first few deals</li>
-        <li class="chapter-item">🛬 Turning "no" into a $400k client</li>
-        <li class="chapter-item">🏘️ Power of Community</li>
-        <li class="chapter-item">🛰️ Price and negotiate like a pro</li>
-        <li class="chapter-item">💼 Defining "work"</li>
-      </ul>
-      <ul>
-        <li class="chapter-item">⛩️ Zen and the Art of Unicycle Maintenance</li>
-        <li class="chapter-item">💰 Asking for upfront payment</li>
-        <li class="chapter-item">🌆 Expanding horizons</li>
-        <li class="chapter-item">📦 Productization</li>
-        <li class="chapter-item"><span class="on-brand">and more!</span></li>
-      </ul>
+      <div>
+        <video width="640" height="350" autoplay loop muted controls>
+          <source src="assets/vsl.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   </div>
+</div>
 
+<div class="section">
   <div class="plan">
     <div class="plan-inner">
       <div class="plan-pricing">
@@ -355,7 +349,7 @@ tags:
               <div>Discord community</div>
             </div>
             <div class="item-subtitle">
-              <p>Connect in agency owners on Discord for networking and support</p>
+              <p>Connect in agency owners from all over the world on Discord for networking and support</p>
             </div>
           </div>
           <div class="items">
@@ -381,11 +375,32 @@ tags:
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div style="display: block; padding: 1rem 0; text-align: center">
-          Join over&nbsp;
-          <span class="hlite">400+</span>
-          &nbsp;readers and community members.
+  <div class="plan plan-drip">
+    <div class="plan-inner plan-inner-drip">
+      <div style="plan-inner-drip-content">
+        <p class="plan-drip-subtitle">Get FREE actional tips for the next 8 Weeks</p>
+        <p style="font-size: 2rem;">
+          Join <span class="hlite">600+</span> on the ultimate journey building a 500K Solo dev Agency.
+        </p>
+        <div class="plan-drip-input">
+          <input
+            type="text"
+            id="email_address"
+            name="email_address"
+            class="email-input"
+            placeholder="Email address"
+          >
+          <button id="btn-drip" class="btn-primary btn-subscribe">Read for Free</button>
+        </div>
+
+        <div style="font-size: 1rem">
+          "It's the best guide I have read in the matter, I like that it's honest and candid. It's very practical too.
+          Step by step. I also recommend it to some of my best friends of indie hackers." -
+          <a href="https://microlaunch.net/p/500kagency" target="_blank">Microlaunch</a>
         </div>
       </div>
     </div>
@@ -797,5 +812,19 @@ tags:
       });
     }
     window.open('https://buy.stripe.com/cN2eWcbKcbox12gaEK');
+  });
+
+  document.getElementById('btn-drip').addEventListener('click', function () {
+    const value = document.getElementById('email_address').value;
+    if (!value) {
+      return;
+    }
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'click', {
+        event_category: 'Drip Campaign',
+        event_label: 'Read for Free',
+      });
+    }
+    window.open(`/mba-interest-waitlist?email_address=${value}`);
   });
 </script>
