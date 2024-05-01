@@ -268,10 +268,16 @@ div {
     margin: 1.125rem 0;
     text-align: center;
     line-height: 1.75rem;
+    max-width: 500px;
 
     @include media-query($on-palm) {
       font-size: 0.9rem;
       line-height: 1.5rem;
+      max-width: unset;
+    }
+
+    @include media-query($on-laptop) {
+      max-width: 400px;
     }
 
     div.item-title {
