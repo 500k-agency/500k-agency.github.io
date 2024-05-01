@@ -52,6 +52,10 @@ $on-tablet: 990px !default;
     color: rgba(0, 0, 0, 0.44);
     margin-top: 0.75rem;
   }
+
+  .item-subtitle {
+    color: #000;
+  }
 }
 
 /* Dark mode */
@@ -292,12 +296,16 @@ div {
       }
     }
 
+    div.items {
+      margin-bottom: 1.5rem;
+    }
+
     div.item-subtitle {
       p {
         text-align: start;
-        color: #9aa4b1;
         font-size: 0.9rem;
         margin-bottom: 12px;
+        line-height: 1.5rem;
       }
     }
 
