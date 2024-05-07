@@ -297,6 +297,12 @@ div {
     }
 
     div.items {
+      display: flex;
+      gap: 1.125rem;
+      margin-bottom: 1.125rem;
+    }
+
+    div.item-icon {
       margin-bottom: 1.5rem;
     }
 
