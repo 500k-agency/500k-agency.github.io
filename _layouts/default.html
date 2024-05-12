@@ -7,16 +7,17 @@
     {%- seo -%}
     <title>{{ page.title }}</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <link rel="stylesheet" href="{{ "/assets/playbook.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
     {%- if jekyll.environment == 'production' and site.google_analytics -%}
       {%- include google-analytics.html -%}
     {%- endif -%}
   </head>
   <body>
+    {%- include header.html -%}
+
     {{ content }}
 
     {%- include footer.html -%}
-
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>

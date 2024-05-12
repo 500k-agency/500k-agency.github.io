@@ -1,20 +1,24 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <h3>Latest Blog Posts</h3>
-      <div class="footer-col">
-        <ul>
-          {% for post in site.posts | sort "date" limit: 5 %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-          {% endfor %}
-          <li>
-            <a href="/blog">View more&nbsp;→</a>
-          </li>
-        </ul>
+  <div class="section">
+    <div class="container">
+      <div class="wrapper">
+        <div class="footer-col-wrapper">
+          <h3>Latest Blog Posts</h3>
+          <div class="footer-col">
+            <ul>
+              {% for post in site.posts | sort "date" limit: 5 %}
+                <li>
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+              {% endfor %}
+              <li>
+                <a href="/blog">View more&nbsp;→</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>

@@ -1,8 +1,38 @@
 <header class="site-header" role="banner">
   <div class="wrapper">
-    <div style="margin: 8px;">
-      <img alt="rocket logo" width="32px" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.webp" />
+    <div class="site-title">
+      <img
+        alt="rocket logo"
+        width="32px"
+        style="margin-right: 8px"
+        src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f680/512.webp"
+      >
+      <a rel="author" href="{{ "/" | relative_url }}">500K</a>
     </div>
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">Spacestation Labs: Building the $500K/Year Solo Dev Agency</a>
+
+    <nav class="site-nav">
+      <div class="trigger">
+        <a class="page-link" href="{{ "#aboutme" | relative_url }}">About me</a>
+        <a class="page-link" href="{{ "#price" | relative_url }}">Price</a>
+        <a class="page-link" href="{{ "#chapters" | relative_url }}">Chapters</a>
+        <a class="page-link" href="{{ "#testimonials" | relative_url }}">Testimonials</a>
+      </div>
+    </nav>
+
+    <div class="site-nav-btn">
+      <button id="btn-site-nav" class="btn-primary btn-site-nav">Get the playbook</button>
+    </div>
   </div>
 </header>
+
+<script>
+  document.getElementById('btn-site-nav').addEventListener('click', function () {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'click', {
+        event_category: 'Site Nav',
+        event_label: 'Get the playbook',
+      });
+    }
+    window.location.href = '/#price';
+  });
+</script>

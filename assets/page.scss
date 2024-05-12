@@ -3,27 +3,17 @@
 
 // Import partials.
 @import "minima", "minima/base", "minima/layout", "minima/syntax-highlighting";
-
-$brand-color: #d70466;
-$on-tablet: 990px !default;
+@import "500k";
 
 article {
-  padding: 3rem 0;
-}
-
-.site-header {
-  .wrapper {
-    display: flex;
-    padding-right: 0;
-    padding-left: 0;
-    max-width: 800px;
-  }
+  padding: 3rem 5%;
 }
 
 .post-header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .post {
@@ -31,6 +21,7 @@ article {
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
+  padding-top: 8rem;
 }
 
 .post-banner {

@@ -23,10 +23,8 @@ tags:
 
     <span class="pretitle">Practical guide to building<br></span>
 
-    <h1>
-      $500K/Year<br>
-      <span>Solo Dev Agency</span>
-    </h1>
+    <h1 style="margin-bottom: 0">$500K/Year<br></h1>
+    <h2>Solo Dev Agency</h2>
 
     <div
       style="
@@ -38,18 +36,7 @@ tags:
       <button id="btn-read-primary" class="btn-primary btn-read-now">Get the playbook</button>
     </div>
 
-    <div style="display: flex; flex-direction: column;">
-      <a href="https://microlaunch.net?utm_source=badge-winner-microlaunch&utm_medium=badge" target="_blank">
-        <img
-          src="https://wild-dust-0517.microlaunch.workers.dev/microlaunch-winner-badges/ml_gold_light_v1.svg"
-          alt="Microlaunch - Launch, get feedback, exposure and first customers over a month"
-          style="width:298px;height:70px"
-          width="298"
-          height="70"
-        >
-      </a>
-      April 2024 Winner
-    </div>
+    {%- include microlaunch.html -%}
   </div>
 </div>
 
@@ -253,7 +240,7 @@ tags:
 
 <div class="section">
   <div class="container container-v">
-    <div class="aboutme">
+    <div id="aboutme" class="aboutme">
       <span class="mugshot">
         <img src="./assets/me_sqr.jpg" alt="paul's profile picture">
       </span>
@@ -291,7 +278,7 @@ tags:
 
 <div class="section">
   <div class="container">
-    <h2>Steps to 500K (10 Chapters)</h2>
+    <h2 id="chapters">Steps to 500K (10 Chapters)</h2>
     <div class="container-lesson">
       <div>
         <video width="640" height="350" autoplay loop muted controls>
@@ -303,11 +290,11 @@ tags:
   </div>
 </div>
 
-<div class="section">
+<div id="price" class="section">
   <div class="plan">
     <div class="plan-inner">
       <div class="plan-pricing">
-        <span class="plan-pricing">$19</span>
+        <span class="plan-pricing">$39</span>
         <button id="btn-read-book" class="btn-read-now">Get the book</button>
         <span>(one-time purchase)</span>
       </div>
@@ -457,7 +444,7 @@ tags:
   </div>
 </div>
 
-<div id="section-review" class="section">
+<div id="testimonials" class="section">
   <div class="container">
     <h2>Testimonials</h2>
     <div id="secondary-review" class="reviews">
@@ -819,13 +806,21 @@ tags:
 ></script>
 
 <script>
+  if (location.hash) {
+    document.getElementById(location.hash).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  }
+
   document.getElementById('primary-review').addEventListener('click', function () {
     if (typeof gtag !== 'undefined') {
       gtag('event', 'click', {
         event_category: 'Review',
       });
     }
-    document.getElementById('section-review').scrollIntoView({
+    document.getElementById('testimonials').scrollIntoView({
       behavior: 'smooth',
       block: 'start',
       inline: 'nearest',
@@ -836,7 +831,7 @@ tags:
     if (typeof gtag !== 'undefined') {
       gtag('event', 'click', {
         event_category: 'Primary',
-        event_label: 'Get to playbook',
+        event_label: 'Get the playbook',
       });
     }
     document.getElementById('btn-read-secondary').scrollIntoView({
@@ -863,7 +858,7 @@ tags:
         event_label: 'Get the book',
       });
     }
-    window.open('https://buy.stripe.com/cN2eWcbKcbox12gaEK');
+    window.open('https://buy.stripe.com/8wMg0g01uakt9yM3cp');
   });
 
   document.getElementById('btn-drip').addEventListener('click', function () {
