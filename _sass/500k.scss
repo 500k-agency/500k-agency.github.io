@@ -55,6 +55,9 @@ body {
     }
   }
 
+  -webkit-backdrop-filter: blur(
+    16px
+  ); /* Add this line first, it fixes blur for Safari*/
   backdrop-filter: blur(16px);
 
   @include media-query($on-palm) {
