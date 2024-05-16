@@ -39,6 +39,12 @@ body {
     text-decoration: unset !important;
   }
 
+  a.author {
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+
   /* Light mode */
   @media (prefers-color-scheme: light) {
     color: $text-color;
