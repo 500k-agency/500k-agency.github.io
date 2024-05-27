@@ -281,7 +281,7 @@ tags:
     <h2 id="chapters">Steps to 500K (10 Chapters)</h2>
     <div class="container-lesson">
       <div>
-        <video width="640" height="350" autoplay loop muted controls>
+        <video width="640" height="350" loop muted controls>
           <source src="assets/vsl.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -408,6 +408,57 @@ tags:
               </div>
               <div class="item-subtitle">
                 <p>Unlock your inbound lead generation with our walkthrough from zero-5k followers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="plan">
+    <div class="plan-inner">
+      <div class="plan-pricing">
+        <span class="plan-pricing">$159</span>
+        <button id="btn-get-coaching" class="btn-read-now">Get coaching</button>
+        <span>(one-time purchase)</span>
+      </div>
+      <div class="plan-features">
+        <div>
+          <h2>Coaching Session</h2>
+        </div>
+        <div class="plan-feature-items">
+          <div class="items">
+            <div class="item-icon">
+              <!-- icons https://phosphoricons.com -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                <path d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="item-title">
+                <div>Everything in the Package</div>
+              </div>
+              <div class="item-subtitle">
+                <p>Book, access to Discord community, weekly group calls.</p>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="item-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                <path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H53.39a8,8,0,0,0,7.23-4.57,48,48,0,0,1,86.76,0,8,8,0,0,0,7.23,4.57H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM80,144a24,24,0,1,1,24,24A24,24,0,0,1,80,144Zm136,56H159.43a64.39,64.39,0,0,0-28.83-26.16,40,40,0,1,0-53.2,0A64.39,64.39,0,0,0,48.57,200H40V56H216ZM56,96V80a8,8,0,0,1,8-8H192a8,8,0,0,1,8,8v96a8,8,0,0,1-8,8H176a8,8,0,0,1,0-16h8V88H72v8a8,8,0,0,1-16,0Z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="item-title">
+                <div>1-time Coaching Session</div>
+              </div>
+              <div class="item-subtitle">
+                <p>
+                  Get all your questions and concerns answered 1-on-1. I will provide you with a template and script to
+                  land your next client in 60 days.
+                </p>
               </div>
             </div>
           </div>
@@ -859,6 +910,16 @@ tags:
       });
     }
     window.open('https://buy.stripe.com/8wMg0g01uakt9yM3cp');
+  });
+
+  document.getElementById('btn-get-coaching').addEventListener('click', function () {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'click', {
+        event_category: 'Secondary',
+        event_label: 'Get coaching',
+      });
+    }
+    window.open('https://buy.stripe.com/dR629q3dGcsB9yM6oC');
   });
 
   document.getElementById('btn-drip').addEventListener('click', function () {
