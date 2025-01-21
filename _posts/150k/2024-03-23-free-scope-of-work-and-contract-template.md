@@ -1,6 +1,6 @@
 ---
 layout: page
-title: FREE scope of work and contract template for software freelancers
+title: Solo agency Scope of work (SOW) template [download]
 tag: 150k
 date: 2024-03-23 14:52 -0400
 ---
