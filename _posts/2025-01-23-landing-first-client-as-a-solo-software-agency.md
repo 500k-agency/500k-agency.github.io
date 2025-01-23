@@ -50,6 +50,9 @@ The Strategy That Works:
 3. Share your experiences (not services)
 4. Let your expertise speak for itself
 
+Here's [a list of
+communities](https://github.com/pxue/awesome-startup-communities) I frequently use.
+
 Today at 500K Agency, we still get most of our best clients through community
 connections and referrals. It's slower than aggressive outbound tactics, but it
 builds a foundation that lasts.
